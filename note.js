@@ -6,7 +6,9 @@ function showNotes(){
     notesContainer.innerHTML = localStorage.getItem("notes");
 }
 showNotes();
-
+functiom updateStorage(){
+    notesCoutainer.innerHTML = localStorage.setItem("notes");
+}
 createBtn.addEventListener("click", () => {
     let inputBox = document.createElement("p");
     let img = document.createElement("img");
